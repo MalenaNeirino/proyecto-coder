@@ -1,0 +1,74 @@
+/*COMIENZO SIDEBAR*/
+.sidebar{
+    grid-area: sidebar;
+    padding-top: 3%;
+    @media (min-width: 600px){
+        background-color: $white;
+    }
+}
+
+.sidebar .title{
+    margin-top: 2%;
+    font-size: 30px;
+
+}
+
+.product button, img{
+    width: 100%;
+}
+
+.sidebar .product{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin: 2%;
+    @media (min-width: 600px){
+        width: 20%;
+    }
+    
+} 
+.second-section p{
+    width: 110%;
+    margin: 0 auto;
+    color: $white;
+    font-size: 23px;
+    font-style: normal;
+    letter-spacing: 0.5rem;
+    position: relative;
+    padding: 3px;
+    border: $white 2px double;
+    @media (min-width: 600px){
+        width: 40%;
+    }
+}
+
+.fondo{
+    background-image: url('img/kids-mobile.jpg');
+    padding: 200px 200px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+    @media (min-width: 600px){
+        background-image: url('img/kids-desktop.jpg');
+    }
+}
+
+.fondo:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+
+
+/*FIN SIDEBAR*/

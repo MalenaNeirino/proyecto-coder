@@ -1,0 +1,32 @@
+/*////////////////////////////////// CONTACT PAGE ////////////////////////////*/
+
+
+form{
+    width: 70%;
+    margin: 0 auto;
+    border: none;
+    display: inline;
+}
+
+form input, textarea, select {
+    width: 100%;
+}
+
+.enviar, .reset{
+    width: 50% ;
+    background-color: $pink;
+    border: solid 2px black;
+}
+
+.send-buttons{
+    display: inline-flex;
+    width: 100%;
+}
+
+#img-contact{
+    width: 50%;
+    margin-top: -8px;
+}
+
+
+/*////////////////////////////////// END CONTACT PAGE ////////////////////////////*/

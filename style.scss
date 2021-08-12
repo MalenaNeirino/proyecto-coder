@@ -1,0 +1,18 @@
+@import "sections/_config";
+@import "sections/_header";
+@import "sections/_main";
+@import "sections/_sidebar";
+@import "sections/_footer";
+@import "sections/pages/_product";
+@import "sections/pages/_contact";
+@import "sections/pages/_winter";
+@import "sections/pages/_new-arrivals";
+@import "sections/pages/_cuenta";
+
+/*FUENTES*/
+@font-face {
+    font-family: 'Happy-Lucky-Free';
+    src: url('Fonts/Happy-Lucky-Free.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }

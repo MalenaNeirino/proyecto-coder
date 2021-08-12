@@ -1,0 +1,89 @@
+
+/*COMIENZO FOOTER*/
+.footer{
+    grid-area: footer;
+    background-color: $pink;
+    color: $white;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    @media (min-width: 600px) {
+        display: inline-flex;
+        width: 100%;
+    }
+}
+.footer .info-footer {
+    display: inline-block;
+    text-align: center;
+}
+.accordion{
+    display: block;
+    width: 100%;
+    background-color: $pink;
+    @media (min-width: 600px) {
+        display: inline-flex;
+        width: 100%;
+    }
+}
+.accordion-item {
+    width: 100%;
+    background-color: $pink;
+}
+
+.accordion-collapse{
+    background-color: $white;
+    li {
+        a{
+            text-decoration: none;
+            color: black;
+            @media (min-width: 600px){
+                color: white;
+            }
+        }
+        a:hover{
+            color: $pink; 
+        }
+    }
+}
+
+.info-desk{
+    display: none;
+    @media (min-width: 600px) {
+        width: 90%;
+        position: absolute;
+        display: inline-flex;
+        margin-left: 9%;
+        margin-top: 2%;
+        .accordion-body{
+            width: 100%;
+            li{
+                list-style:none;
+    
+            }
+            a{
+              text-decoration: none;
+              color: black;  
+            }
+            a:hover{
+                color: white;  
+              }
+        }
+    }
+}
+
+.accordion-button{
+    background-color: $pink;
+    text-decoration: none;
+    color: black;
+}
+
+.accordion-button:hover{
+        background-color: $gradient !important;
+        text-decoration: none;
+        color: $white;
+        @media (min-width: 600px) {
+            display: none;
+        }
+}
+
+/*FIN FOOTER*/

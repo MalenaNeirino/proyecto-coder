@@ -1,0 +1,29 @@
+.new-arrivals {
+    opacity: 50%;
+    position: relative;
+}
+
+#logo-friends{
+    width: 95%;
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    animation-duration: 5s;
+    animation-name: aparecer;
+
+}
+
+.product img{
+    width: 100%;
+    transition: 2s;
+}
+
+.product img:hover {
+    width: 130%;
+}
+
+.banner-collection-new{
+    margin: 0 auto;
+    display: inline-flex;
+    text-align: center;
+}
