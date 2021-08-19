@@ -42,7 +42,7 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  grid-template: "header" auto "navbar" auto "main" auto  "sidebar" auto "footer" auto;
+  grid-template: "banner_text" auto "header" auto "nav-mobile" auto "navbar" auto "main" auto  "sidebar" auto "footer" auto;
 }
 
 @media (min-width: 600px) {
@@ -62,8 +62,15 @@ body {
 }
 
 .banner_text h2 {
-  font-size: 20px;
+  font-size: 10px;
   margin: 0 auto;
+  margin-top: 2px;
+}
+
+@media (min-width: 600px) {
+  .banner_text h2 {
+    font-size: 20px;
+  }
 }
 
 /* FIN BANNER TEXT */
@@ -83,12 +90,14 @@ body {
 }
 
 #logo {
-  width: 30%;
+  width: 50%;
+  padding-right: 30%;
 }
 
 @media (min-width: 600px) {
   #logo {
     width: 150px;
+    padding-right: 0%;
     position: relative;
     margin-top: 15px;
     z-index: 4;
@@ -96,7 +105,7 @@ body {
 }
 
 #carrito {
-  width: 30%;
+  width: 30px;
 }
 
 @media (min-width: 600px) {
@@ -110,7 +119,7 @@ body {
 }
 
 #cuenta {
-  width: 30%;
+  width: 30px;
 }
 
 @media (min-width: 600px) {
@@ -124,12 +133,37 @@ body {
 
 /*FIN HEADER*/
 /*COMIENZO NAVBAR*/
+.nav-mobile {
+  display: inline;
+}
+
+@media (min-width: 600px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.nav-mobile .accordion-button {
+  background-color: #fcfcfa !important;
+  color: black;
+}
+
+.nav-mobile li {
+  list-style: none;
+}
+
+.nav-mobile li a {
+  text-decoration: none;
+  color: black;
+}
+
 .navbar {
   grid-area: navbar;
   padding-top: 10px;
   width: 100%;
   background: #fcfcfa;
   font-size: 100%;
+  display: none;
 }
 
 @media (min-width: 600px) {
@@ -261,7 +295,6 @@ button a {
   width: 100%;
   text-align: center;
   margin-top: 8%;
-  text-align: left;
   font-size: 140%;
 }
 
@@ -493,6 +526,7 @@ button a {
   }
   .info-desk .accordion-body {
     width: 100%;
+    padding-bottom: 0px;
   }
   .info-desk .accordion-body li {
     list-style: none;

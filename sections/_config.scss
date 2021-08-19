@@ -40,7 +40,9 @@ body {
   display: grid;
   grid-template-columns: 100%;
   grid-template:
+    "banner_text" auto
     "header" auto
+    "nav-mobile" auto
     "navbar" auto
     "main" auto 
     "sidebar" auto
